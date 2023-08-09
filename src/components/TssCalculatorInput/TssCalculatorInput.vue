@@ -1,0 +1,43 @@
+<script setup lang="ts">
+import FactorInput from './FactorInput.vue'
+import FormField from './FormField.vue'
+import NumberInput from './NumberInput.vue'
+import { Input } from '../types'
+
+type Props = { input: Input }
+type Emits = { (e: 'change', input: Input): void }
+
+const props = defineProps<Props>()
+const emit = defineEmits<Emits>()
+
+const update = (key: string, value: number) => {
+  emit('change', { ...props.input, [key]: value })
+}
+</script>
+
+<template>
+  <FormField label="Target fitness">
+    <NumberInput
+      :value="input.targetFitness"
+      @change="update('targetFitness', $event)"
+    />
+  </FormField>
+  <FormField label="Active weeks">
+    <NumberInput
+      :value="input.numberOfActiveWeeks"
+      @change="update('numberOfActiveWeeks', $event)"
+    />
+  </FormField>
+  <FormField label="Rest weeks">
+    <NumberInput
+      :value="input.numberOfRestWeeks"
+      @change="update('numberOfRestWeeks', $event)"
+    />
+  </FormField>
+  <FormField label="Rest week factor">
+    <FactorInput
+      :value="input.restWeekFactor"
+      @change="update('restWeekFactor', $event)"
+    />
+  </FormField>
+</template>
