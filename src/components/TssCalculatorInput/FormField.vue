@@ -1,22 +1,11 @@
 <script setup lang="ts">
+import Labeled from '../Labeled.vue'
+
 defineProps<{ label?: string }>()
 </script>
 
 <template>
-  <div class="form-field">
-    <label class="form-field__label">{{ label }}</label>
+  <Labeled :label="label">
     <slot />
-  </div>
+  </Labeled>
 </template>
-
-<style scoped>
-.form-field {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
-}
-.form-field__label {
-  width: 140px;
-}
-</style>

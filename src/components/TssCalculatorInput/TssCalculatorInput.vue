@@ -2,7 +2,7 @@
 import FactorInput from './FactorInput.vue'
 import FormField from './FormField.vue'
 import NumberInput from './NumberInput.vue'
-import { Input } from '../types'
+import { Input } from '../../types'
 
 type Props = { input: Input }
 type Emits = { (e: 'change', input: Input): void }
@@ -22,13 +22,13 @@ const update = (key: string, value: number) => {
       @change="update('targetFitness', $event)"
     />
   </FormField>
-  <FormField label="Active weeks">
+  <FormField label="Number of active weeks">
     <NumberInput
       :value="input.numberOfActiveWeeks"
       @change="update('numberOfActiveWeeks', $event)"
     />
   </FormField>
-  <FormField label="Rest weeks">
+  <FormField label="Number of rest weeks">
     <NumberInput
       :value="input.numberOfRestWeeks"
       @change="update('numberOfRestWeeks', $event)"
