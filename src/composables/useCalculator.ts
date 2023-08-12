@@ -1,11 +1,10 @@
-import { computed, ref, Ref } from 'vue'
-import storage from '../components/storage'
-import { Input, Output } from '../types'
+import { computed, Ref } from 'vue'
+import { useLocalStorage } from '@vueuse/core'
+import { Input, Output } from '../types/calculator'
 
 type Calculator = {
   input: Ref<Input>
   output: Ref<Output>
-  update: (newInput: Input) => void
   reset: () => void
 }
 
@@ -34,18 +33,12 @@ const calculate = (input: Input): Output => {
 }
 
 export const useCalculator = (): Calculator => {
-  const input = ref(storage.get(STORAGE_KEY, DEFAULT_INPUT))
+  const input = useLocalStorage(STORAGE_KEY, DEFAULT_INPUT)
   const output = computed(() => calculate(input.value))
-
-  const update = (newInput: Input) => {
-    input.value = newInput
-    storage.set(STORAGE_KEY, newInput)
-  }
 
   const reset = () => {
     input.value = DEFAULT_INPUT
-    storage.remove(STORAGE_KEY)
   }
 
-  return { input, output, update, reset }
+  return { input, output, reset }
 }

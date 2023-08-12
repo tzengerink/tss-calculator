@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Labeled from '../Labeled.vue'
+import PrependLabel from '../PrependLabel.vue'
 
 defineProps<{ label?: string }>()
 </script>
 
 <template>
-  <Labeled :label="label">
+  <PrependLabel :label="label">
     <slot />
-  </Labeled>
+  </PrependLabel>
 </template>

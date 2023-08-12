@@ -2,7 +2,7 @@
 import FactorInput from './FactorInput.vue'
 import FormField from './FormField.vue'
 import NumberInput from './NumberInput.vue'
-import { Input } from '../../types'
+import { Input } from '../../types/calculator'
 
 type Props = { input: Input }
 type Emits = { (e: 'change', input: Input): void }
