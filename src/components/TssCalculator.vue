@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { useCalculator } from '../composables/useCalculator'
+import { Input } from '../types/calculator'
 import TssCalculatorInput from './TssCalculatorInput/TssCalculatorInput.vue'
 import TssCalculatorOutput from './TssCalculatorOutput.vue'
 
-const { input, output, update, reset } = useCalculator()
+const { input, output, reset } = useCalculator()
+
+const onChange = (newInput: Input) => {
+  input.value = newInput
+}
 </script>
 
 <template>
@@ -17,7 +22,7 @@ const { input, output, update, reset } = useCalculator()
         Reset
       </button>
     </div>
-    <TssCalculatorInput :input="input" @change="update" />
+    <TssCalculatorInput :input="input" @change="onChange" />
     <TssCalculatorOutput :output="output" />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Labeled from './Labeled.vue'
-import { Output } from '../types'
+import { Output } from '../types/calculator'
 
 const props = defineProps<{ output?: Output }>()
 </script>
