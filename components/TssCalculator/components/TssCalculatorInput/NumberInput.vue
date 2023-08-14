@@ -8,10 +8,5 @@ const onChange = ($event: Event) => {
 </script>
 
 <template>
-  <input
-    class="p-1 w-full accent-cppink"
-    type="number"
-    :value="props.value"
-    @change="onChange"
-  />
+  <input class="p-1 w-full accent-cppink" type="number" :value="props.value" @change="onChange" />
 </template>

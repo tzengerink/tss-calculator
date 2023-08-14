@@ -21,11 +21,11 @@ const onChange = ($event: Event) => {
       @change="onChange"
     />
     <datalist id="markers">
-      <option value="0"></option>
-      <option value="25"></option>
-      <option value="50"></option>
-      <option value="75"></option>
-      <option value="100"></option>
+      <option value="0" />
+      <option value="25" />
+      <option value="50" />
+      <option value="75" />
+      <option value="100" />
     </datalist>
     <span class="basis-1/12 ml-3 mt-1 text-sm">{{ props.value }}%</span>
   </div>
