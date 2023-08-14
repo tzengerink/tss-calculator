@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useCalculator } from '../composables/useCalculator'
-import { Input } from '../types/calculator'
-import TssCalculatorInput from './TssCalculatorInput/TssCalculatorInput.vue'
-import TssCalculatorOutput from './TssCalculatorOutput.vue'
-import CalculatorIcon from './CalculatorIcon.vue'
-import ResetIcon from './ResetIcon.vue'
+import { useCalculator } from './composables/useCalculator'
+import { Input } from './types/calculator'
+import TssCalculatorInput from './components/TssCalculatorInput/TssCalculatorInput.vue'
+import TssCalculatorOutput from './components/TssCalculatorOutput.vue'
+import CalculatorIcon from './components/CalculatorIcon.vue'
+import ResetIcon from './components/ResetIcon.vue'
 
 const { input, output, reset } = useCalculator()
 
