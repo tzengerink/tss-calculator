@@ -1,5 +1,4 @@
 import { computed, Ref } from 'vue'
-import { useLocalStorage } from '@vueuse/core'
 import { Input, Output } from '../types/calculator'
 
 type Calculator = {
@@ -15,14 +14,13 @@ const DEFAULT_INPUT: Input = {
   targetFitness: 100,
   numberOfActiveWeeks: 3,
   numberOfRestWeeks: 1,
-  restWeekFactor: 75,
+  restWeekFactor: 70,
 }
 
 const calculate = (input: Input): Output => {
   const numberOfWeeks = input.numberOfActiveWeeks + input.numberOfRestWeeks
   const activeWeekRatio = numberOfWeeks * input.numberOfActiveWeeks * 1
-  const restWeekRatio =
-    numberOfWeeks * input.numberOfRestWeeks * (input.restWeekFactor / 100)
+  const restWeekRatio = numberOfWeeks * input.numberOfRestWeeks * (input.restWeekFactor / 100)
   const totalLoad = DAYS_IN_A_WEEK * numberOfWeeks * input.targetFitness
   const loadQuotient = totalLoad / (activeWeekRatio + restWeekRatio)
 
@@ -33,8 +31,12 @@ const calculate = (input: Input): Output => {
 }
 
 export const useCalculator = (): Calculator => {
-  const input = useLocalStorage(STORAGE_KEY, DEFAULT_INPUT)
+  const input = ref(DEFAULT_INPUT)
   const output = computed(() => calculate(input.value))
+
+  onMounted(() => {
+    syncRef(useLocalStorage(STORAGE_KEY, DEFAULT_INPUT), input)
+  })
 
   const reset = () => {
     input.value = DEFAULT_INPUT
