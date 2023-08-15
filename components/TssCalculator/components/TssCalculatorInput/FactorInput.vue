@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ value?: number }>()
+const props = defineProps<{ link?: string; value?: number }>()
 const emit = defineEmits<{ (e: 'change', value: number): void }>()
 const [min, max, step] = [0, 100, 5]
 
@@ -11,6 +11,7 @@ const onChange = ($event: Event) => {
 <template>
   <div class="flex flex-row justify-between">
     <input
+      :id="link"
       class="basis-11/12 accent-cppink"
       type="range"
       list="markers"

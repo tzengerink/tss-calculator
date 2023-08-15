@@ -16,16 +16,24 @@ const update = (key: string, value: number) => {
 </script>
 
 <template>
-  <FormField label="Target fitness">
-    <NumberInput :value="input.targetFitness" @change="update('targetFitness', $event)" />
+  <FormField link="targetFitness" label="Target fitness">
+    <NumberInput link="targetFitness" :value="input.targetFitness" @change="update('targetFitness', $event)" />
   </FormField>
-  <FormField label="Number of active weeks">
-    <NumberInput :value="input.numberOfActiveWeeks" @change="update('numberOfActiveWeeks', $event)" />
+  <FormField link="numberOfActiveWeeks" label="Number of active weeks">
+    <NumberInput
+      link="numberOfActiveWeeks"
+      :value="input.numberOfActiveWeeks"
+      @change="update('numberOfActiveWeeks', $event)"
+    />
   </FormField>
-  <FormField label="Number of rest weeks">
-    <NumberInput :value="input.numberOfRestWeeks" @change="update('numberOfRestWeeks', $event)" />
+  <FormField link="numberOfRestWeeks" label="Number of rest weeks">
+    <NumberInput
+      link="numberOfRestWeeks"
+      :value="input.numberOfRestWeeks"
+      @change="update('numberOfRestWeeks', $event)"
+    />
   </FormField>
-  <FormField label="Rest week factor">
-    <FactorInput :value="input.restWeekFactor" @change="update('restWeekFactor', $event)" />
+  <FormField link="restWeekFactor" label="Rest week factor">
+    <FactorInput link="restWeekFactor" :value="input.restWeekFactor" @change="update('restWeekFactor', $event)" />
   </FormField>
 </template>
