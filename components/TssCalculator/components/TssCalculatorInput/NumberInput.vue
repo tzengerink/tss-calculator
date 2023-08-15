@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ value?: number }>()
+const props = defineProps<{ link?: string; value?: number }>()
 const emit = defineEmits<{ (e: 'change', value: number): void }>()
 
 const onChange = ($event: Event) => {
@@ -8,5 +8,5 @@ const onChange = ($event: Event) => {
 </script>
 
 <template>
-  <input class="p-1 w-full accent-cppink" type="number" :value="props.value" @change="onChange" />
+  <input :id="link" class="p-1 w-full accent-cppink" type="number" :value="props.value" @change="onChange" />
 </template>

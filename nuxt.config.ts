@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {
-    enabled: true,
+    enabled: false,
+  },
+  vite: {
+    optimizeDeps: { exclude: ['fsevents'] },
   },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module', '@vueuse/nuxt', '@pinia/nuxt'],
 })

@@ -2,7 +2,6 @@
 import TssCalculatorInput from './components/TssCalculatorInput/TssCalculatorInput.vue'
 import TssCalculatorOutput from './components/TssCalculatorOutput.vue'
 import CalculatorIcon from './components/CalculatorIcon.vue'
-import ResetIcon from './components/ResetIcon.vue'
 import { useCalculatorStore } from './stores/calculatorStore'
 
 const store = useCalculatorStore()
@@ -16,11 +15,11 @@ const store = useCalculatorStore()
         <span>TSS Calculator</span>
       </h1>
       <button
-        class="px-2 text-2xl text-cpgray border border-cpgray rounded hover:text-cppink hover:border-cppink"
+        class="px-2 text-sm text-cpgray border border-cpgray rounded hover:text-cppink hover:border-cppink"
         title="Reset"
         @click="store.$reset"
       >
-        <ResetIcon />
+        Reset
       </button>
     </div>
     <TssCalculatorInput :input="store.input" @change="store.onChange" />

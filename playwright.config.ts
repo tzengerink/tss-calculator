@@ -1,0 +1,36 @@
+import { defineConfig, devices } from '@playwright/test'
+
+const PORT = 3000
+const HOST = `http://127.0.0.1:${PORT}`
+
+export default defineConfig({
+  testDir: './e2e',
+  fullyParallel: true,
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 1 : undefined,
+  reporter: 'html',
+  use: {
+    baseURL: HOST,
+    trace: 'on-first-retry',
+  },
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
+  ],
+  webServer: {
+    command: `yarn dev -p ${PORT}`,
+    url: HOST,
+    reuseExistingServer: !process.env.CI,
+  },
+})

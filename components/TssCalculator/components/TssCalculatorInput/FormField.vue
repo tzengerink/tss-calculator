@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import PrependLabel from '../PrependLabel.vue'
 
-defineProps<{ label?: string }>()
+defineProps<{ link?: string; label?: string }>()
 </script>
 
 <template>
-  <PrependLabel :label="label">
+  <PrependLabel :link="link" :label="label">
     <slot />
   </PrependLabel>
 </template>
