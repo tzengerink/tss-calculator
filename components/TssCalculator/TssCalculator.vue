@@ -1,16 +1,11 @@
 <script setup lang="ts">
-import { useCalculator } from './composables/useCalculator'
-import { Input } from './types/calculator'
 import TssCalculatorInput from './components/TssCalculatorInput/TssCalculatorInput.vue'
 import TssCalculatorOutput from './components/TssCalculatorOutput.vue'
 import CalculatorIcon from './components/CalculatorIcon.vue'
 import ResetIcon from './components/ResetIcon.vue'
+import { useCalculatorStore } from './stores/calculatorStore'
 
-const { input, output, reset } = useCalculator()
-
-const onChange = (newInput: Input) => {
-  input.value = newInput
-}
+const store = useCalculatorStore()
 </script>
 
 <template>
@@ -23,12 +18,12 @@ const onChange = (newInput: Input) => {
       <button
         class="px-2 text-2xl text-cpgray border border-cpgray rounded hover:text-cppink hover:border-cppink"
         title="Reset"
-        @click="reset"
+        @click="store.$reset"
       >
         <ResetIcon />
       </button>
     </div>
-    <TssCalculatorInput :input="input" @change="onChange" />
-    <TssCalculatorOutput :output="output" />
+    <TssCalculatorInput :input="store.input" @change="store.onChange" />
+    <TssCalculatorOutput :output="store.output" />
   </div>
 </template>
