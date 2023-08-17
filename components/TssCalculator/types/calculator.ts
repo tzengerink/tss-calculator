@@ -1,3 +1,9 @@
+export type MenuItem = {
+  icon: string
+  label: string
+  action: () => void
+}
+
 export type Input = {
   targetFitness: number
   numberOfActiveWeeks: number
