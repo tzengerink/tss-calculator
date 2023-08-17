@@ -1,12 +1,21 @@
 <script setup lang="ts">
-const props = defineProps<{ link?: string; value?: number }>()
+const props = defineProps<{ label?: string; value?: number }>()
 const emit = defineEmits<{ (e: 'change', value: number): void }>()
 
-const onChange = ($event: Event) => {
-  emit('change', +($event.target as HTMLInputElement).value)
-}
+const numberValue = ref(props.value)
+
+watch(numberValue, (newValue) => emit('change', +(newValue || 0)))
 </script>
 
 <template>
-  <input :id="link" class="p-1 w-full accent-cppink" type="number" :value="props.value" @change="onChange" />
+  <v-text-field
+    v-model="numberValue"
+    class="mb-4"
+    :label="label"
+    type="number"
+    density="compact"
+    hide-details="auto"
+    variant="outlined"
+    color="deep-purple"
+  />
 </template>

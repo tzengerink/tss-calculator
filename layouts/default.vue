@@ -3,12 +3,16 @@ useHead({
   title: 'TSS Calculator',
   link: [
     {
-      href: 'https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,300&display=swap',
       rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap',
     },
+    { rel: 'manifest', href: 'manifest.json' },
   ],
+  htmlAttrs: {
+    class: 'overflow-y-auto',
+  },
   bodyAttrs: {
-    class: 'bg-cpwhite font-mono text-cpblack font-light md:bg-cpgray',
+    class: 'font-light sm:bg-cpgray',
   },
 })
 </script>

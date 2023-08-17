@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import { Output } from '../types/calculator'
-import PrependLabel from './PrependLabel.vue'
 
 const props = defineProps<{ output?: Output }>()
 </script>
 
 <template>
-  <div class="flex flex-row">
-    <PrependLabel class="basis-1/2" label="Active week TSS">
-      <span class="text-2xl">{{ Math.round(props.output?.activeWeekTss || 0) }}</span>
-    </PrependLabel>
-    <PrependLabel class="basis-1/2" label="Rest week TSS">
-      <span class="text-2xl">{{ Math.round(props.output?.restWeekTss || 0) }}</span>
-    </PrependLabel>
-  </div>
+  <v-card class="py-8 rounded-0">
+    <div class="flex flex-row">
+      <div class="basis-1/2">
+        <v-card-subtitle>Active week TSS</v-card-subtitle>
+        <span class="px-4 text-3xl text-deep-purple">{{ Math.round(props.output?.activeWeekTss || 0) }}</span>
+      </div>
+      <div class="basis-1/2">
+        <v-card-subtitle>Recovery week TSS</v-card-subtitle>
+        <span class="px-4 text-3xl text-deep-purple">{{ Math.round(props.output?.restWeekTss || 0) }}</span>
+      </div>
+    </div>
+  </v-card>
 </template>

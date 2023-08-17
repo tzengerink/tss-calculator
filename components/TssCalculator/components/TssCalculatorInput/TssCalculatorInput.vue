@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Input } from '../../types/calculator'
 import FactorInput from './FactorInput.vue'
-import FormField from './FormField.vue'
 import NumberInput from './NumberInput.vue'
 
 type Props = { input: Input }
@@ -16,24 +15,25 @@ const update = (key: string, value: number) => {
 </script>
 
 <template>
-  <FormField link="targetFitness" label="Target fitness">
-    <NumberInput link="targetFitness" :value="input.targetFitness" @change="update('targetFitness', $event)" />
-  </FormField>
-  <FormField link="numberOfActiveWeeks" label="Number of active weeks">
+  <v-card class="my-1 py-8 px-4 rounded-0">
+    <NumberInput label="Target fitness" :value="input.targetFitness" @change="update('targetFitness', $event)" />
     <NumberInput
+      label="Number of active weeks"
       link="numberOfActiveWeeks"
       :value="input.numberOfActiveWeeks"
       @change="update('numberOfActiveWeeks', $event)"
     />
-  </FormField>
-  <FormField link="numberOfRestWeeks" label="Number of rest weeks">
     <NumberInput
+      label="Number of recovery weeks"
       link="numberOfRestWeeks"
       :value="input.numberOfRestWeeks"
       @change="update('numberOfRestWeeks', $event)"
     />
-  </FormField>
-  <FormField link="restWeekFactor" label="Rest week factor">
-    <FactorInput link="restWeekFactor" :value="input.restWeekFactor" @change="update('restWeekFactor', $event)" />
-  </FormField>
+    <FactorInput
+      label="Recovery factor"
+      link="restWeekFactor"
+      :value="input.restWeekFactor"
+      @change="update('restWeekFactor', $event)"
+    />
+  </v-card>
 </template>

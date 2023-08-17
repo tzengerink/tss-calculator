@@ -3,9 +3,6 @@ export default {
   content: ['./**/*.{vue,ts}'],
   theme: {
     extend: {
-      fontFamily: {
-        mono: ['Roboto Mono', 'ui-monospace'],
-      },
       colors: {
         cpblack: '#000000',
         cppurple: '#7B4B94',
