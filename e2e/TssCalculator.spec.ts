@@ -15,7 +15,17 @@ test('calculates TSS', async ({ page }) => {
   await expect(page.getByText('243', { exact: true })).toBeVisible()
 })
 
-test('resets calculation', async ({ page }) => {
+test('stores input values', async ({ page }) => {
+  await setInputValues(page)
+  await page.goto('https://github.com/')
+  await page.goto('/')
+  await expect(page.getByLabel('Target fitness')).toHaveValue('42')
+  await expect(page.getByLabel('Number of active weeks')).toHaveValue('5')
+  await expect(page.getByLabel('Number of recovery weeks')).toHaveValue('3')
+  await expect(page.getByText('75%')).toBeVisible()
+})
+
+test('resets input values', async ({ page }) => {
   await setInputValues(page)
   await page.getByTitle('menu').click()
   await page.getByText('Reset').click()
