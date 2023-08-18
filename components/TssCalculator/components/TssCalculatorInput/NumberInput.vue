@@ -1,15 +1,15 @@
 <script setup lang="ts">
 const props = defineProps<{ label?: string; value?: number }>()
-const emit = defineEmits<{ (e: 'change', value: number): void }>()
+const emit = defineEmits<{ (e: 'update', value: number): void }>()
 
-const numberValue = ref(props.value)
-
-watch(numberValue, (newValue) => emit('change', +(newValue || 0)))
+const onUpdate = (value: string) => {
+  emit('update', Number(value))
+}
 </script>
 
 <template>
   <v-text-field
-    v-model="numberValue"
+    :model-value="props.value"
     class="mb-4"
     :label="label"
     type="number"
@@ -17,5 +17,6 @@ watch(numberValue, (newValue) => emit('change', +(newValue || 0)))
     hide-details="auto"
     variant="outlined"
     color="deep-purple"
+    @update:model-value="onUpdate"
   />
 </template>
