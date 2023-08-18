@@ -1,6 +1,19 @@
 # tss-calculator
 
-Calculate weekly TSS based on target fitness
+Calculate weekly TSS based on target fitness.
+
+This repository was build using the following technologies:
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vue.js](https://vuejs.org/)
+- [Nuxt](https://nextjs.org/)
+- [Pinia](https://pinia.vuejs.org/)
+- [VueUse](https://vueuse.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Playwright](https://playwright.dev/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://typicode.github.io/husky/)
 
 ## What is Training Stress Score (TSS)?
 
