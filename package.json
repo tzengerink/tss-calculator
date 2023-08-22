@@ -1,39 +1,16 @@
 {
-  "name": "nuxt-app",
+  "name": "tss-calculator",
   "private": true,
   "scripts": {
-    "install:playwright": "playwright install --with-deps",
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "lint": "eslint --ext=.ts,.vue --max-warnings=0 .",
-    "test": "playwright test",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
     "prepare": "husky install"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@invictus.codes/nuxt-vuetify": "^0.3.0",
-    "@nuxt/devtools": "latest",
-    "@nuxtjs/eslint-config-typescript": "^12.0.0",
-    "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@pinia/nuxt": "^0.4.11",
-    "@playwright/test": "^1.37.1",
-    "@types/node": "^20.5.1",
-    "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "^6.3.0",
-    "@vueuse/core": "^10.3.0",
-    "@vueuse/nuxt": "^10.3.0",
-    "eslint": "^8.47.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
-    "nuxt": "^3.6.5",
-    "pinia": "^2.1.6",
     "prettier": "^3.0.1",
-    "typescript": "^5.1.6",
-    "vue-eslint-parser": "^9.3.1"
+    "typescript": "^5.1.6"
   },
   "packageManager": "yarn@3.6.2"
 }
