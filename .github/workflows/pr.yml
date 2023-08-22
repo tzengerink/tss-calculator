@@ -10,14 +10,25 @@ jobs:
       matrix:
         node-version: [20.5]
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js (${{ matrix.node-version }})
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install
-        run: npm install && npm run install:playwright
+      - name: Install dependencies
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+      - name: Install Playwright
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install:playwright
       - name: Lint
-        run: npm run lint
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: lint
       - name: Test
-        run: npm run test
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test

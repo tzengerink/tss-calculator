@@ -18,10 +18,16 @@ logs
 .fleet
 .idea
 
+# Yarn
+.yarn/*
+!.yarn/releases
+
 # Local env files
 .env
 .env.*
 !.env.example
+
+# Playwright
 /test-results/
 /playwright-report/
 /playwright/.cache/
