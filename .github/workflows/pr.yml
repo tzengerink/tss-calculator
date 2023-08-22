@@ -4,7 +4,7 @@ on:
     branches:
       - '*'
 jobs:
-  test:
+  formulas:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -16,11 +16,35 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
+      - name: Install
         uses: borales/actions-yarn@v4
         with:
           cmd: install
-      - name: Install Playwright
+      - name: Lint
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: workspace @tss-calculator/formulas lint
+      - name: Test
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: workspace @tss-calculator/formulas test
+  web:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.5]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js (${{ matrix.node-version }})
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+      - name: Prepare
         uses: borales/actions-yarn@v4
         with:
           cmd: workspace @tss-calculator/web install:playwright

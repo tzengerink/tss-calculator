@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Output } from '../types/calculator'
+import { WeeklyTssOutput } from '@tss-calculator/formulas'
 
-const props = defineProps<{ output?: Output }>()
+const props = defineProps<{ output?: WeeklyTssOutput }>()
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const props = defineProps<{ output?: Output }>()
       </div>
       <div class="basis-1/2">
         <v-card-subtitle>Recovery week TSS</v-card-subtitle>
-        <span class="px-4 text-3xl text-deep-purple">{{ Math.round(props.output?.restWeekTss || 0) }}</span>
+        <span class="px-4 text-3xl text-deep-purple">{{ Math.round(props.output?.recoveryWeekTss || 0) }}</span>
       </div>
     </div>
   </v-card>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { Input } from '../../types/calculator'
+import { WeeklyTssInput } from '@tss-calculator/formulas'
 import FactorInput from './FactorInput.vue'
 import NumberInput from './NumberInput.vue'
 
-type Props = { input: Input }
-type Emits = { (e: 'change', input: Input): void }
+type Props = { input: WeeklyTssInput }
+type Emits = { (e: 'change', input: WeeklyTssInput): void }
 
 const props = defineProps<Props>()
 const emit = defineEmits<Emits>()
@@ -25,15 +25,15 @@ const onUpdate = (key: string, value: number) => {
     />
     <NumberInput
       label="Number of recovery weeks"
-      link="numberOfRestWeeks"
-      :value="input.numberOfRestWeeks"
-      @update="onUpdate('numberOfRestWeeks', $event)"
+      link="numberOfRecoveryWeeks"
+      :value="input.numberOfRecoveryWeeks"
+      @update="onUpdate('numberOfRecoveryWeeks', $event)"
     />
     <FactorInput
       label="Recovery factor"
-      link="restWeekFactor"
-      :value="input.restWeekFactor"
-      @update="onUpdate('restWeekFactor', $event)"
+      link="recoveryWeekFactor"
+      :value="input.recoveryWeekFactor"
+      @update="onUpdate('recoveryWeekFactor', $event)"
     />
   </v-card>
 </template>
