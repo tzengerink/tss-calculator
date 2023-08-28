@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
 
 const PORT = 3000
-const HOST = `http://127.0.0.1:${PORT}`
+const HOST = `http://localhost:${PORT}`
 
 export default defineConfig({
   testDir: './e2e',
