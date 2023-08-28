@@ -2045,7 +2045,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.3.0
     "@typescript-eslint/parser": ^6.3.0
     "@vueuse/core": ^10.3.0
-    "@vueuse/nuxt": ^10.3.0
+    "@vueuse/nuxt": ^10.4.0
     eslint: ^8.47.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
@@ -2763,7 +2763,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.3.0, @vueuse/core@npm:^10.3.0":
+"@vueuse/core@npm:10.4.0":
+  version: 10.4.0
+  resolution: "@vueuse/core@npm:10.4.0"
+  dependencies:
+    "@types/web-bluetooth": ^0.0.17
+    "@vueuse/metadata": 10.4.0
+    "@vueuse/shared": 10.4.0
+    vue-demi: ">=0.14.5"
+  checksum: facfc2d4f4007b5c272b4a16be4ece9115c3791c561e645713aae45400115b8e8595db0760d782b44df92413f4f373f1dc19a4f9511af05075517669dcfc049b
+  languageName: node
+  linkType: hard
+
+"@vueuse/core@npm:^10.3.0":
   version: 10.3.0
   resolution: "@vueuse/core@npm:10.3.0"
   dependencies:
@@ -2782,19 +2794,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/nuxt@npm:^10.3.0":
-  version: 10.3.0
-  resolution: "@vueuse/nuxt@npm:10.3.0"
+"@vueuse/metadata@npm:10.4.0":
+  version: 10.4.0
+  resolution: "@vueuse/metadata@npm:10.4.0"
+  checksum: a846479f9574aa8ab413002c32aa5cce391c2e22ef8b635045e75b6d92196a0e2645e74708656472b7e0f4df956c3ad30f954b3f74932d9275f3385fcf3b8513
+  languageName: node
+  linkType: hard
+
+"@vueuse/nuxt@npm:^10.4.0":
+  version: 10.4.0
+  resolution: "@vueuse/nuxt@npm:10.4.0"
   dependencies:
     "@nuxt/kit": ^3.6.5
-    "@vueuse/core": 10.3.0
-    "@vueuse/metadata": 10.3.0
+    "@vueuse/core": 10.4.0
+    "@vueuse/metadata": 10.4.0
     local-pkg: ^0.4.3
     nuxt: ^3.6.5
     vue-demi: ">=0.14.5"
   peerDependencies:
     nuxt: ^3.0.0
-  checksum: 3c7367dd8a74cf8c9ac114eb80ae39f9d081ba2298d4f4df22e4c3d8346c0ed2bb6dbdd22f713bca42c2b852951f554c2ca45bef2a820741e0c2adfe5402a308
+  checksum: 829c2b05e31683c037a516d10d40a33fd6483d66bc5a30683b269ed353cacbfabe534873d47f48cdc047392a245d9c60f09bfe4276af77f67d434daf67083d1a
   languageName: node
   linkType: hard
 
@@ -2804,6 +2823,15 @@ __metadata:
   dependencies:
     vue-demi: ">=0.14.5"
   checksum: 2392ce5c798ff2aa09c82de11fef3a6cc1eb3d198598e0f19f803645003003e06c90bc4cde5367200f8458a31344edcd4ab571b84a4f7d21ee8083b9309c9bf3
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:10.4.0":
+  version: 10.4.0
+  resolution: "@vueuse/shared@npm:10.4.0"
+  dependencies:
+    vue-demi: ">=0.14.5"
+  checksum: e1ea5069ab209381dd6380da5c695b67b3ad20c303b80113a8c718d1d09f1cac64a417ddfc0d474edd43d637e6dad932cc8e522f7c45d63d2d141341799e3d20
   languageName: node
   linkType: hard
 
