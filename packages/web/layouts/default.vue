@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import MenuBar from '../components/MenuBar/MenuBar.vue'
+import { useCalculatorStore } from '../components/TssCalculator/stores/calculatorStore'
+
+const calculatorStore = useCalculatorStore()
+const menuItems = [{ icon: 'mdi-undo', label: 'Reset', action: calculatorStore.$reset }]
+
 useHead({
   title: 'TSS Calculator',
   link: [
@@ -18,7 +24,8 @@ useHead({
 </script>
 
 <template>
-  <main>
+  <main class="mx-auto sm:mt-8 sm:max-w-md">
+    <MenuBar :items="menuItems" />
     <slot />
   </main>
 </template>

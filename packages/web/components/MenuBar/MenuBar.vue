@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MenuItem } from '../types/calculator'
+import { MenuItem } from './types.ts'
 
 defineProps<{ items?: MenuItem[] }>()
 </script>
