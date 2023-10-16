@@ -1981,13 +1981,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.4.11":
-  version: 0.4.11
-  resolution: "@pinia/nuxt@npm:0.4.11"
+"@pinia/nuxt@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@pinia/nuxt@npm:0.5.0"
   dependencies:
     "@nuxt/kit": ^3.5.0
-    pinia: ">=2.1.0"
-  checksum: 1a634ab7cbd1ecc3fd18d909e2ef6ef7d9cd161503d638f452e1dbd87233e9f05ccd0c11d50d40a66ceb37d569b02521dfdce895b39653b513d7be39cfb8af1e
+    pinia: ">=2.1.7"
+  checksum: 8e8d0bb5981f29feced4335c4738ab631ada640be1f7c7c51c33d107c382acc8a769c654bbd785ea0f10599408a23aefde66a92eefc4d3621cd9d68304893f0b
   languageName: node
   linkType: hard
 
@@ -2233,7 +2233,7 @@ __metadata:
     "@nuxtjs/eslint-config-typescript": ^12.1.0
     "@nuxtjs/eslint-module": ^4.1.0
     "@nuxtjs/tailwindcss": ^6.8.0
-    "@pinia/nuxt": ^0.4.11
+    "@pinia/nuxt": ^0.5.0
     "@playwright/test": ^1.39.0
     "@tss-calculator/formulas": "workspace:^"
     "@types/node": ^20.8.3
@@ -9196,7 +9196,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:>=2.1.0, pinia@npm:^2.1.6":
+"pinia@npm:>=2.1.7":
+  version: 2.1.7
+  resolution: "pinia@npm:2.1.7"
+  dependencies:
+    "@vue/devtools-api": ^6.5.0
+    vue-demi: ">=0.14.5"
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.3.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 1b7882aab2828ad209d3e76e06918c8811d04699c9308d372094cde6df485d7e7785f25a3bb5c6a3724aeaee3fb0082fae03c41a6657acd3486c7965a0a09d34
+  languageName: node
+  linkType: hard
+
+"pinia@npm:^2.1.6":
   version: 2.1.6
   resolution: "pinia@npm:2.1.6"
   dependencies:
