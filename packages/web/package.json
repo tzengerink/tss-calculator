@@ -27,7 +27,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "nuxt": "^3.7.4",
-    "pinia": "^2.1.6",
+    "pinia": "^2.1.7",
     "vue-eslint-parser": "^9.3.2"
   }
 }
