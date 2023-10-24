@@ -1981,13 +1981,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "@pinia/nuxt@npm:0.5.0"
+"@pinia/nuxt@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "@pinia/nuxt@npm:0.5.1"
   dependencies:
     "@nuxt/kit": ^3.5.0
     pinia: ">=2.1.7"
-  checksum: 8e8d0bb5981f29feced4335c4738ab631ada640be1f7c7c51c33d107c382acc8a769c654bbd785ea0f10599408a23aefde66a92eefc4d3621cd9d68304893f0b
+  checksum: d9f6aa9f5fa50e811d538931162aa55c193d66324df48c74044b63916c3fa03dd64441b4ef1ce7043d3c3f1009d6cbf2d180ec4990f39d781e0c5c279275c465
   languageName: node
   linkType: hard
 
@@ -2233,7 +2233,7 @@ __metadata:
     "@nuxtjs/eslint-config-typescript": ^12.1.0
     "@nuxtjs/eslint-module": ^4.1.0
     "@nuxtjs/tailwindcss": ^6.8.0
-    "@pinia/nuxt": ^0.5.0
+    "@pinia/nuxt": ^0.5.1
     "@playwright/test": ^1.39.0
     "@tss-calculator/formulas": "workspace:^"
     "@types/node": ^20.8.7
