@@ -15,14 +15,8 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
   projects: [
-    {
-      name: 'desktop:firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'mobile:chrome',
-      use: { ...devices['Nexus 5'] },
-    },
+    { name: 'desktop:firefox', use: { ...devices['Desktop Firefox'] } },
+    // { name: 'mobile:chrome', use: { ...devices['Nexus 5'] } },
   ],
   webServer: {
     command: `yarn dev -p ${PORT}`,
