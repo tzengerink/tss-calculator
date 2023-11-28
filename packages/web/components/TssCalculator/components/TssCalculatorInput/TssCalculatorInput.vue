@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { WeeklyTssInput } from '@tss-calculator/formulas'
+import { type WeeklyTssInput } from '@tss-calculator/formulas'
 import FactorInput from './FactorInput.vue'
 import NumberInput from './NumberInput.vue'
 
