@@ -24,7 +24,7 @@
     "@vueuse/core": "^10.7.0",
     "@vueuse/nuxt": "^10.6.1",
     "eslint": "^8.54.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
     "nuxt": "^3.8.2",
     "pinia": "^2.1.7",
