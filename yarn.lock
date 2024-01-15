@@ -871,16 +871,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/cascade-layer-name-parser@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "@csstools/cascade-layer-name-parser@npm:1.0.5"
-  peerDependencies:
-    "@csstools/css-parser-algorithms": ^2.3.2
-    "@csstools/css-tokenizer": ^2.2.1
-  checksum: 91c533690b249fc5a284dcdedcb29b4129cc64d8325895c566c13b795c381d65b4b9829eb2e66df883d5b9468536f6010cccc74c8bf78fbbd85ecc595656c8f6
-  languageName: node
-  linkType: hard
-
 "@csstools/cascade-layer-name-parser@npm:^1.0.7":
   version: 1.0.7
   resolution: "@csstools/cascade-layer-name-parser@npm:1.0.7"
@@ -888,15 +878,6 @@ __metadata:
     "@csstools/css-parser-algorithms": ^2.5.0
     "@csstools/css-tokenizer": ^2.2.3
   checksum: 7f278075241de67357cf26f20c463a29b2829f11836bd18ae8a66c8f18f2115e04652a63a3647cd2ba8ecc04fd3c4d032dc19b9a2f09231309dfce584cc8cc9c
-  languageName: node
-  linkType: hard
-
-"@csstools/css-parser-algorithms@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "@csstools/css-parser-algorithms@npm:2.3.2"
-  peerDependencies:
-    "@csstools/css-tokenizer": ^2.2.1
-  checksum: 71663a00369014727ac89ae738f0acd1341b2dc1474ff16799a6f4d24674c55c3ddb89d70c8f1ffc4e03508b18a621830f8f8a51707fda6cc5ea48f1a53cc559
   languageName: node
   linkType: hard
 
@@ -909,13 +890,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/css-tokenizer@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "@csstools/css-tokenizer@npm:2.2.1"
-  checksum: ebd9f65b253037d3a575ded45dbe41c12e71d83d6aa8a6a3a9fc2427862a805678df2a825cd19cf36b587be93f5cb1bd0932bb5c362d227ed9533db35b1fc6fa
-  languageName: node
-  linkType: hard
-
 "@csstools/css-tokenizer@npm:^2.2.3":
   version: 2.2.3
   resolution: "@csstools/css-tokenizer@npm:2.2.3"
@@ -923,12 +897,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/selector-specificity@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@csstools/selector-specificity@npm:3.0.0"
+"@csstools/selector-specificity@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@csstools/selector-specificity@npm:3.0.1"
   peerDependencies:
     postcss-selector-parser: ^6.0.13
-  checksum: 4a2dfe69998a499155d9dab4c2a0e7ae7594d8db98bb8a487d2d5347c0c501655051eb5eacad3fe323c86b0ba8212fe092c27fc883621e6ac2a27662edfc3528
+  checksum: e4b5aac3bd3ca1f824cb9578f52b16046a519aa8050ce291da37e611976a83cd3b2b2f908d2678dd4cbbe00bbde8ec28c34fffc40dbbf9a13608dfcaf382ee80
   languageName: node
   linkType: hard
 
@@ -1800,7 +1774,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.9.1":
+"@nuxt/kit@npm:3.9.1, @nuxt/kit@npm:^3.9.1":
   version: 3.9.1
   resolution: "@nuxt/kit@npm:3.9.1"
   dependencies:
@@ -2122,27 +2096,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/tailwindcss@npm:^6.10.3":
-  version: 6.10.3
-  resolution: "@nuxtjs/tailwindcss@npm:6.10.3"
+"@nuxtjs/tailwindcss@npm:^6.10.4":
+  version: 6.10.4
+  resolution: "@nuxtjs/tailwindcss@npm:6.10.4"
   dependencies:
-    "@nuxt/kit": ^3.8.2
+    "@nuxt/kit": ^3.9.1
     autoprefixer: ^10.4.16
     chokidar: ^3.5.3
     clear-module: ^4.1.2
     colorette: ^2.0.20
     consola: ^3.2.3
-    defu: ^6.1.3
-    h3: ^1.9.0
+    defu: ^6.1.4
+    h3: ^1.10.0
     micromatch: ^4.0.5
     pathe: ^1.1.1
-    postcss: ^8.4.31
-    postcss-custom-properties: ^13.3.2
-    postcss-nesting: ^12.0.1
+    postcss: ^8.4.33
+    postcss-custom-properties: ^13.3.4
+    postcss-nesting: ^12.0.2
     tailwind-config-viewer: ^1.7.3
-    tailwindcss: ~3.4.0
+    tailwindcss: ~3.4.1
     ufo: ^1.3.2
-  checksum: 57763b1a041b71253f3befdd73586a3d2d37879790ec887a2ac249071bfdb7ea0c108e1ab7e571f8088779ef043955591686b0770b6b452e5dbee9d1d092e9e7
+  checksum: ca46ebbe7d1d14c668193ecfd09f4f9a4db1a363da4b2c3bdfa13f1ec1f0662087dd9a7b84b50b8e04948f0bef4ddcb590d0b5f657630e566db1b1e474550549
   languageName: node
   linkType: hard
 
@@ -2711,7 +2685,7 @@ __metadata:
     "@invictus.codes/nuxt-vuetify": ^0.3.0
     "@nuxtjs/eslint-config-typescript": ^12.1.0
     "@nuxtjs/eslint-module": ^4.1.0
-    "@nuxtjs/tailwindcss": ^6.10.3
+    "@nuxtjs/tailwindcss": ^6.10.4
     "@pinia/nuxt": ^0.5.1
     "@playwright/test": ^1.40.1
     "@tss-calculator/formulas": "workspace:^"
@@ -10672,20 +10646,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^13.3.2":
-  version: 13.3.2
-  resolution: "postcss-custom-properties@npm:13.3.2"
-  dependencies:
-    "@csstools/cascade-layer-name-parser": ^1.0.5
-    "@csstools/css-parser-algorithms": ^2.3.2
-    "@csstools/css-tokenizer": ^2.2.1
-    postcss-value-parser: ^4.2.0
-  peerDependencies:
-    postcss: ^8.4
-  checksum: d53f6b2514b9d144008e646c16bd000d3536aec5776941bd1452d39fe9b173e131b429672e946fd1811820d2dc2938f7ea20b52f1c7abd2a713644b8d43fdcc4
-  languageName: node
-  linkType: hard
-
 "postcss-custom-properties@npm:^13.3.4":
   version: 13.3.4
   resolution: "postcss-custom-properties@npm:13.3.4"
@@ -10922,15 +10882,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-nesting@npm:^12.0.1":
-  version: 12.0.1
-  resolution: "postcss-nesting@npm:12.0.1"
+"postcss-nesting@npm:^12.0.2":
+  version: 12.0.2
+  resolution: "postcss-nesting@npm:12.0.2"
   dependencies:
-    "@csstools/selector-specificity": ^3.0.0
+    "@csstools/selector-specificity": ^3.0.1
     postcss-selector-parser: ^6.0.13
   peerDependencies:
     postcss: ^8.4
-  checksum: fa6157fbdc9109b3859cdb925ec8357ea7c9c984110015381a55e63770d1b5aaddaac5f5816a32b9efbb55fbdb87f8187ff7fc2db24331c82b2f74091aa9ba06
+  checksum: 41701bff41910eef1236d7be076b0cfa9f11e0a15b07816daa052c4eff53675b35df80dc4c8e7b5bd6bca906b2878fc2e4f5344bc9d80392953af1aad815aa93
   languageName: node
   linkType: hard
 
@@ -11164,7 +11124,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
+"postcss@npm:^8.1.10, postcss@npm:^8.4.23":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -12558,9 +12518,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:~3.4.0":
-  version: 3.4.0
-  resolution: "tailwindcss@npm:3.4.0"
+"tailwindcss@npm:~3.4.1":
+  version: 3.4.1
+  resolution: "tailwindcss@npm:3.4.1"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
@@ -12587,7 +12547,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: d7f05beb1cf98d169b9b65ef674a82dd16c97757194f9bacee4c536cf74f3852e0008a74f7af8578f4a1e9639fac262fd8ef89efe3e6e06667243640422f9462
+  checksum: ef5a587dd32bb4e91e1549ead6162f85f0b78d3e6ffd8b4e8eeb15585b7b886cb3af6ae9df5092ed8ccb7e590608d1b3eec79ca08c862b07cd9ff7e72f73104b
   languageName: node
   linkType: hard
 
