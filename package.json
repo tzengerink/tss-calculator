@@ -2,7 +2,7 @@
   "name": "tss-calculator",
   "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "workspaces": [
     "packages/*"
