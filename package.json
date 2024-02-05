@@ -9,7 +9,7 @@
   ],
   "devDependencies": {
     "husky": "^9.0.6",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "typescript": "^5.3.3"
   },
   "packageManager": "yarn@3.6.2"
