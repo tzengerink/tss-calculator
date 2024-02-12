@@ -15,7 +15,7 @@
     "@invictus.codes/nuxt-vuetify": "^0.3.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/tailwindcss": "^6.11.2",
+    "@nuxtjs/tailwindcss": "^6.11.4",
     "@pinia/nuxt": "^0.5.1",
     "@playwright/test": "^1.41.2",
     "@types/node": "^20.11.16",
