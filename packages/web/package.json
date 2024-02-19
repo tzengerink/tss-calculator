@@ -19,7 +19,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@playwright/test": "^1.41.2",
     "@types/node": "^20.11.17",
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^6.21.0",
     "@vueuse/core": "^10.7.2",
     "@vueuse/nuxt": "^10.7.2",
