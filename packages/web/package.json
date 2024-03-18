@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@tss-calculator/formulas": "workspace:^",
-    "postcss-custom-properties": "^13.3.5"
+    "postcss-custom-properties": "^13.3.6"
   },
   "devDependencies": {
     "@invictus.codes/nuxt-vuetify": "^0.3.0",
