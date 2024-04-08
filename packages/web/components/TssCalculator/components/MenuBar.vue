@@ -15,7 +15,7 @@ defineProps<{ items?: MenuItem[] }>()
       <v-list>
         <v-list-item v-for="item in items" :key="item.label" color="deep-purple" @click="item.action">
           <template #prepend>
-            <v-icon :icon="item.icon"></v-icon>
+            <v-icon :icon="item.icon" />
           </template>
           <v-list-item-title>{{ item.label }}</v-list-item-title>
         </v-list-item>
