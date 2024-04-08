@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     '@invictus.codes/nuxt-vuetify',
   ],
   devtools: { enabled: false },
+  eslint: {
+    lintOnStart: false,
+  },
   vite: {
     optimizeDeps: { exclude: ['fsevents'] },
   },

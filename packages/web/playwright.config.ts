@@ -14,12 +14,9 @@ export default defineConfig({
     baseURL: HOST,
     trace: 'on-first-retry',
   },
-  projects: [
-    { name: 'desktop:firefox', use: { ...devices['Desktop Firefox'] } },
-    // { name: 'mobile:chrome', use: { ...devices['Nexus 5'] } },
-  ],
+  projects: [{ name: 'desktop:firefox', use: { ...devices['Desktop Firefox'] } }],
   webServer: {
-    command: `yarn dev -p ${PORT}`,
+    command: `VITE_CJS_TRACE=true yarn dev -p ${PORT}`,
     url: HOST,
     reuseExistingServer: !process.env.CI,
   },
