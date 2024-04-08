@@ -17,15 +17,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: install
       - name: Lint
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: workspace @tss-calculator/formulas lint
       - name: Test
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: workspace @tss-calculator/formulas test
   web:
@@ -41,18 +41,18 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: install
       - name: Prepare
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: workspace @tss-calculator/web install:playwright
       - name: Lint
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: workspace @tss-calculator/web lint
       - name: Test
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: workspace @tss-calculator/web test
