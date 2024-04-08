@@ -1,10 +1,11 @@
 {
   "name": "@tss-calculator/web",
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "install:playwright": "playwright install --with-deps",
-    "lint": "eslint --ext=.ts,.vue --max-warnings=0 .",
+    "lint": "eslint --max-warnings=0",
     "test": "playwright test"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
   },
   "devDependencies": {
     "@invictus.codes/nuxt-vuetify": "^0.3.0",
+    "@nuxt/eslint-config": "^0.3.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.11.4",

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { weeklyTss, WeeklyTssInput, WeeklyTssOutput } from '@tss-calculator/formulas'
+import { weeklyTss, type WeeklyTssInput, type WeeklyTssOutput } from '@tss-calculator/formulas'
 
 const STORE_NAME = 'tss-calculator'
 const STORAGE_KEY = `${STORE_NAME}:input`
