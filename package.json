@@ -1,12 +1,11 @@
 {
   "name": "tss-calculator",
+  "type": "module",
   "private": true,
   "scripts": {
     "prepare": "husky"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "devDependencies": {
     "husky": "^9.0.11",
     "prettier": "^3.2.5",
