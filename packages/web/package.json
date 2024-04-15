@@ -20,7 +20,7 @@
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@pinia/nuxt": "^0.5.1",
     "@playwright/test": "^1.42.1",
-    "@types/node": "^20.12.5",
+    "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
     "@vueuse/core": "^10.9.0",
