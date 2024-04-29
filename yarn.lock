@@ -2696,7 +2696,7 @@ __metadata:
     eslint-plugin-prettier: ^5.1.3
     nuxt: ^3.11.2
     pinia: ^2.1.7
-    postcss-custom-properties: ^13.3.7
+    postcss-custom-properties: ^13.3.8
     vue-eslint-parser: ^9.4.2
   languageName: unknown
   linkType: soft
@@ -10658,9 +10658,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^13.3.7":
-  version: 13.3.7
-  resolution: "postcss-custom-properties@npm:13.3.7"
+"postcss-custom-properties@npm:^13.3.8":
+  version: 13.3.8
+  resolution: "postcss-custom-properties@npm:13.3.8"
   dependencies:
     "@csstools/cascade-layer-name-parser": ^1.0.9
     "@csstools/css-parser-algorithms": ^2.6.1
@@ -10669,7 +10669,7 @@ __metadata:
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.4
-  checksum: 945af9294befa05eac2d03e6442efa8a1d2147892e0cf706e2d1157c94ddaf45f8fc19507debe22a3844142d119fcd961792ce026f98a6ae3b7932bd95c5f6cc
+  checksum: ea21dbcfd72d511edb4a7e2fd87b223182722fcb76ad2be65c21c92056b71e0c41356ab460954406fd856cf34cb6d79a1b74712857c2ef027fa6f0d91f2c83c2
   languageName: node
   linkType: hard
 
