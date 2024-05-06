@@ -2680,7 +2680,7 @@ __metadata:
     "@playwright/test": ^1.43.1
     "@tss-calculator/formulas": "workspace:^"
     "@types/node": ^20.12.7
-    "@typescript-eslint/eslint-plugin": ^7.7.1
+    "@typescript-eslint/eslint-plugin": ^7.8.0
     "@typescript-eslint/parser": ^7.8.0
     "@vueuse/core": ^10.9.0
     "@vueuse/nuxt": ^10.9.0
@@ -2915,7 +2915,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:7.8.0":
+"@typescript-eslint/eslint-plugin@npm:7.8.0, @typescript-eslint/eslint-plugin@npm:^7.8.0":
   version: 7.8.0
   resolution: "@typescript-eslint/eslint-plugin@npm:7.8.0"
   dependencies:
