@@ -2681,7 +2681,7 @@ __metadata:
     "@tss-calculator/formulas": "workspace:^"
     "@types/node": ^20.12.11
     "@typescript-eslint/eslint-plugin": ^7.8.0
-    "@typescript-eslint/parser": ^7.8.0
+    "@typescript-eslint/parser": ^7.9.0
     "@vueuse/core": ^10.9.0
     "@vueuse/nuxt": ^10.9.0
     eslint: ^9.3.0
@@ -2988,7 +2988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:7.8.0, @typescript-eslint/parser@npm:^7.8.0":
+"@typescript-eslint/parser@npm:7.8.0":
   version: 7.8.0
   resolution: "@typescript-eslint/parser@npm:7.8.0"
   dependencies:
