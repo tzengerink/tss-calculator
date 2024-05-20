@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@invictus.codes/nuxt-vuetify": "^0.3.0",
-    "@nuxt/eslint-config": "^0.3.12",
+    "@nuxt/eslint-config": "^0.3.13",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
