@@ -2682,7 +2682,7 @@ __metadata:
     "@types/node": ^20.14.0
     "@typescript-eslint/eslint-plugin": ^7.10.0
     "@typescript-eslint/parser": ^7.10.0
-    "@vueuse/core": ^10.9.0
+    "@vueuse/core": ^10.10.0
     "@vueuse/nuxt": ^10.10.0
     eslint: ^9.4.0
     eslint-config-prettier: ^9.1.0
@@ -3767,7 +3767,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.10.0":
+"@vueuse/core@npm:10.10.0, @vueuse/core@npm:^10.10.0":
   version: 10.10.0
   resolution: "@vueuse/core@npm:10.10.0"
   dependencies:
