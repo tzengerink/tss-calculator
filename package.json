@@ -5,7 +5,9 @@
   "scripts": {
     "prepare": "husky"
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "husky": "^9.0.11",
     "prettier": "^3.3.2",
