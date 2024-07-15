@@ -22,7 +22,7 @@
     "@playwright/test": "^1.45.1",
     "@types/node": "^20.14.10",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
-    "@typescript-eslint/parser": "^7.14.1",
+    "@typescript-eslint/parser": "^7.16.0",
     "@vueuse/core": "^10.10.0",
     "@vueuse/nuxt": "^10.11.0",
     "eslint": "^9.7.0",
