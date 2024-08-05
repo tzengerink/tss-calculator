@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type WeeklyTssOutput } from '@tss-calculator/formulas'
+import type { WeeklyTssOutput } from '@tss-calculator/formulas'
 
 const props = defineProps<{ output?: WeeklyTssOutput }>()
 </script>
