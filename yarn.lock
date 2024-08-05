@@ -3345,7 +3345,7 @@ __metadata:
     "@types/node": ^22.0.0
     "@typescript-eslint/eslint-plugin": ^7.17.0
     "@typescript-eslint/parser": ^7.16.0
-    "@vueuse/core": ^10.10.0
+    "@vueuse/core": ^10.11.0
     "@vueuse/nuxt": ^10.11.0
     eslint: ^9.7.0
     eslint-config-prettier: ^9.1.0
@@ -4551,7 +4551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.11.0":
+"@vueuse/core@npm:10.11.0, @vueuse/core@npm:^10.11.0":
   version: 10.11.0
   resolution: "@vueuse/core@npm:10.11.0"
   dependencies:
@@ -4560,25 +4560,6 @@ __metadata:
     "@vueuse/shared": 10.11.0
     vue-demi: ">=0.14.8"
   checksum: 51f9b06ee852eb8df2652de3c06db6c89216f17e8c8299996090e48b239411748edc6061d701eb349e6094c29cb1d99dbc011b988d4433a1c2d17fb36c28b1db
-  languageName: node
-  linkType: hard
-
-"@vueuse/core@npm:^10.10.0":
-  version: 10.10.0
-  resolution: "@vueuse/core@npm:10.10.0"
-  dependencies:
-    "@types/web-bluetooth": ^0.0.20
-    "@vueuse/metadata": 10.10.0
-    "@vueuse/shared": 10.10.0
-    vue-demi: ">=0.14.7"
-  checksum: 68f96dd1953c2e2cd27becc585bcb77d074c9623d77192776dff398902af95280f3d379588c457359af9607ccf53f146bfa4b1420f196cb340604b6ba9af4b37
-  languageName: node
-  linkType: hard
-
-"@vueuse/metadata@npm:10.10.0":
-  version: 10.10.0
-  resolution: "@vueuse/metadata@npm:10.10.0"
-  checksum: e52fde82acfba324d60f64340d92e5ba35e6b1fa7c1d1c341d12ff282220ec0367270685b9e34afcbba2e2cc8da05b2e0df67fa3176c0410837e612ee5886f83
   languageName: node
   linkType: hard
 
@@ -4601,15 +4582,6 @@ __metadata:
   peerDependencies:
     nuxt: ^3.0.0
   checksum: c50b7a8d8d48f3d66621fed3e86dd9c6a615e0aa41eae4a872b0c0de5b5ddc0b7812817c2e0c7d15dc3ce6f2b781d9b9d1161c558ea0e315aea80d1dc2e1cd94
-  languageName: node
-  linkType: hard
-
-"@vueuse/shared@npm:10.10.0":
-  version: 10.10.0
-  resolution: "@vueuse/shared@npm:10.10.0"
-  dependencies:
-    vue-demi: ">=0.14.7"
-  checksum: 97cb6fade8fdf9c65b97d96f255f819680f894a5d7541c72c8480518fba0baeaebcc45c261d2986a42943a498c1f202138de192a0352717a4e2ce6478d9273d5
   languageName: node
   linkType: hard
 
@@ -14824,7 +14796,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-demi@npm:>=0.14.5, vue-demi@npm:>=0.14.7":
+"vue-demi@npm:>=0.14.5":
   version: 0.14.7
   resolution: "vue-demi@npm:0.14.7"
   peerDependencies:
