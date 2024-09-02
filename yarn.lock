@@ -3447,7 +3447,7 @@ __metadata:
     "@tss-calculator/formulas": "workspace:^"
     "@types/node": ^22.5.2
     "@typescript-eslint/eslint-plugin": ^8.3.0
-    "@typescript-eslint/parser": ^8.2.0
+    "@typescript-eslint/parser": ^8.3.0
     "@vueuse/core": ^11.0.3
     "@vueuse/nuxt": ^11.0.3
     eslint: ^9.9.1
@@ -3755,24 +3755,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 162fe3a867eeeffda7328bce32dae45b52283c68c8cb23258fb9f44971f761991af61f71b8c9fe1aa389e93dfe6386f8509c1273d870736c507d76dd40647b68
-  languageName: node
-  linkType: hard
-
-"@typescript-eslint/parser@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "@typescript-eslint/parser@npm:8.2.0"
-  dependencies:
-    "@typescript-eslint/scope-manager": 8.2.0
-    "@typescript-eslint/types": 8.2.0
-    "@typescript-eslint/typescript-estree": 8.2.0
-    "@typescript-eslint/visitor-keys": 8.2.0
-    debug: ^4.3.4
-  peerDependencies:
-    eslint: ^8.57.0 || ^9.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 3121ac888f080bafdb4e57c6bf949222d4756fcce617620af574a1b3fa93dec315098c70309849fcd0fdd70edcbbed33dd1f3b6320bb379016c6407de588b96e
   languageName: node
   linkType: hard
 
