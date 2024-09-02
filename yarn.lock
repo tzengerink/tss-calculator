@@ -2869,13 +2869,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.5.3":
-  version: 0.5.3
-  resolution: "@pinia/nuxt@npm:0.5.3"
+"@pinia/nuxt@npm:^0.5.4":
+  version: 0.5.4
+  resolution: "@pinia/nuxt@npm:0.5.4"
   dependencies:
     "@nuxt/kit": ^3.9.0
-    pinia: 2.2.1
-  checksum: 58d38d5ce864648f4dbab566d277236db6af77a373472f007da5249401a96166c56687ad57c0786575673afedc6155b4624cf3a6c704a958db293b731320884d
+    pinia: ^2.2.2
+  checksum: 832868dcfb598e85bd534e2ca03f699d50cd005bde7b3612fc0569c934786b48bbb036e785b0ef6afa03e05785b5024fdf122245256c84bc286ce92ecd5debaa
   languageName: node
   linkType: hard
 
@@ -3504,7 +3504,7 @@ __metadata:
     "@nuxtjs/eslint-config-typescript": ^12.1.0
     "@nuxtjs/eslint-module": ^4.1.0
     "@nuxtjs/tailwindcss": ^6.12.1
-    "@pinia/nuxt": ^0.5.3
+    "@pinia/nuxt": ^0.5.4
     "@playwright/test": ^1.45.2
     "@tss-calculator/formulas": "workspace:^"
     "@types/node": ^22.2.0
@@ -11791,25 +11791,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:2.2.1":
-  version: 2.2.1
-  resolution: "pinia@npm:2.2.1"
-  dependencies:
-    "@vue/devtools-api": ^6.6.3
-    vue-demi: ^0.14.10
-  peerDependencies:
-    "@vue/composition-api": ^1.4.0
-    typescript: ">=4.4.4"
-    vue: ^2.6.14 || ^3.3.0
-  peerDependenciesMeta:
-    "@vue/composition-api":
-      optional: true
-    typescript:
-      optional: true
-  checksum: 73c91aa357d7a520caad3c3a484f69c8f1469e0e4bea874ed0968dc0c80be9fa1a6b26f963045d1188f21204fd3e5e02498826c40c8297b1f395754d3b4a7b33
-  languageName: node
-  linkType: hard
-
 "pinia@npm:^2.1.7":
   version: 2.1.7
   resolution: "pinia@npm:2.1.7"
@@ -11826,6 +11807,25 @@ __metadata:
     typescript:
       optional: true
   checksum: 1b7882aab2828ad209d3e76e06918c8811d04699c9308d372094cde6df485d7e7785f25a3bb5c6a3724aeaee3fb0082fae03c41a6657acd3486c7965a0a09d34
+  languageName: node
+  linkType: hard
+
+"pinia@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "pinia@npm:2.2.2"
+  dependencies:
+    "@vue/devtools-api": ^6.6.3
+    vue-demi: ^0.14.10
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.3.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 87da2d803edc181a46de14513aae2a252b0218561113ce3d970ffb90f4768d12f3526369ed5a457fe8a1f93f8a16aaf691e624f5a54e54101110c30b424698c9
   languageName: node
   linkType: hard
 
