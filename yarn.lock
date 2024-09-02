@@ -3510,7 +3510,7 @@ __metadata:
     "@types/node": ^22.2.0
     "@typescript-eslint/eslint-plugin": ^8.1.0
     "@typescript-eslint/parser": ^8.2.0
-    "@vueuse/core": ^11.0.0
+    "@vueuse/core": ^11.0.3
     "@vueuse/nuxt": ^11.0.3
     eslint: ^9.9.0
     eslint-config-prettier: ^9.1.0
@@ -4651,7 +4651,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:11.0.3":
+"@vueuse/core@npm:11.0.3, @vueuse/core@npm:^11.0.3":
   version: 11.0.3
   resolution: "@vueuse/core@npm:11.0.3"
   dependencies:
@@ -4660,25 +4660,6 @@ __metadata:
     "@vueuse/shared": 11.0.3
     vue-demi: ">=0.14.10"
   checksum: 3e35540facb88e549e34268eb8bd378f9cf5f34ff19fa5b891ddf107e01595b902932a11cbc614ad54568ef4fc7e241111fd019945b600e16bde93614c76dce6
-  languageName: node
-  linkType: hard
-
-"@vueuse/core@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@vueuse/core@npm:11.0.0"
-  dependencies:
-    "@types/web-bluetooth": ^0.0.20
-    "@vueuse/metadata": 11.0.0
-    "@vueuse/shared": 11.0.0
-    vue-demi: ">=0.14.10"
-  checksum: 0d5a935e696754b8343087f61615538fabf799168e443c70f4a9c650a241220602dcf7d35368976bcf437a05e193ab63a19ee86179b8b590ccbe291e1df08c8b
-  languageName: node
-  linkType: hard
-
-"@vueuse/metadata@npm:11.0.0":
-  version: 11.0.0
-  resolution: "@vueuse/metadata@npm:11.0.0"
-  checksum: 1c79032b0d59980287f2a80b36dd542e4e4cdad320060049849419030ee203ceefa9231c16348ac906375a09fcb069b1b931ec871e6a23da1708166a8e3ae0dc
   languageName: node
   linkType: hard
 
@@ -4701,15 +4682,6 @@ __metadata:
   peerDependencies:
     nuxt: ^3.0.0
   checksum: 10291b9ba6271fcacfc59a6f05815f649089b8949a9ae47f81a7bcc2b4f99c8196eebc9465cd3f82175b153cf93edd160bc9d19719c7894a4efaba1bef059f75
-  languageName: node
-  linkType: hard
-
-"@vueuse/shared@npm:11.0.0":
-  version: 11.0.0
-  resolution: "@vueuse/shared@npm:11.0.0"
-  dependencies:
-    vue-demi: ">=0.14.10"
-  checksum: 4238a10ed254de386f425b2a06058fda61745cfd7dcae88bd132730739c07630b412787f5b9d90a9e7f5c9876688fdf6f1d7f0321d607073d035ab5bf610601f
   languageName: node
   linkType: hard
 

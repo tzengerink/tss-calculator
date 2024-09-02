@@ -23,7 +23,7 @@
     "@types/node": "^22.2.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.2.0",
-    "@vueuse/core": "^11.0.0",
+    "@vueuse/core": "^11.0.3",
     "@vueuse/nuxt": "^11.0.3",
     "eslint": "^9.9.0",
     "eslint-config-prettier": "^9.1.0",
