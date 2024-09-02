@@ -981,29 +981,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/cascade-layer-name-parser@npm:^1.0.13":
-  version: 1.0.13
-  resolution: "@csstools/cascade-layer-name-parser@npm:1.0.13"
+"@csstools/cascade-layer-name-parser@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@csstools/cascade-layer-name-parser@npm:2.0.1"
   peerDependencies:
-    "@csstools/css-parser-algorithms": ^2.7.1
-    "@csstools/css-tokenizer": ^2.4.1
-  checksum: 7f243147d1ba8ee20ce66a049020e844a6b069b502e9d6cd301bbf23344777ccbfa8cd8d808d06d7a3ba20585181eb47a149a5ce1d43387494b0ead0638d8a23
+    "@csstools/css-parser-algorithms": ^3.0.1
+    "@csstools/css-tokenizer": ^3.0.1
+  checksum: 627bbd95ef5c61637281fd244b01833ea1c89226cca187fa36cdb82864e35f16c719659dcf24d28c644037772b2b4717b85b2580af85294f5fba1c7907a766d8
   languageName: node
   linkType: hard
 
-"@csstools/css-parser-algorithms@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@csstools/css-parser-algorithms@npm:2.7.1"
+"@csstools/css-parser-algorithms@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@csstools/css-parser-algorithms@npm:3.0.1"
   peerDependencies:
-    "@csstools/css-tokenizer": ^2.4.1
-  checksum: 304e6f92e583042c310e368a82b694af563a395e5c55911caefe52765c5acb000b9daa17356ea8a4dd37d4d50132b76de48ced75159b169b53e134ff78b362ba
+    "@csstools/css-tokenizer": ^3.0.1
+  checksum: 6d8ae77d0a4a14269ab489cbb55d952a226fbdf7999943db1ebd51167ebafa12e24342c56e1af0f9fe6a460f1cf1579442b56f700e3e614faf1c8ba96e0761f4
   languageName: node
   linkType: hard
 
-"@csstools/css-tokenizer@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@csstools/css-tokenizer@npm:2.4.1"
-  checksum: 395c51f8724ddc4851d836f484346bb3ea6a67af936dde12cbf9a57ae321372e79dee717cbe4823599eb0e6fd2d5405cf8873450e986c2fca6e6ed82e7b10219
+"@csstools/css-tokenizer@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@csstools/css-tokenizer@npm:3.0.1"
+  checksum: 53e5e147290972b37c00e2debcd84662e41d1a72055bc231d75c6c6ceb2f654bc3f0ba064ca4ae97c6b39a7c51e1023c4a5e857af2c5c8e16d8665c490ee8948
   languageName: node
   linkType: hard
 
@@ -1025,12 +1025,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/utilities@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@csstools/utilities@npm:1.0.0"
+"@csstools/utilities@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@csstools/utilities@npm:2.0.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 4ca0d80a252ed1d9d3085217ba9c6669e9c9dc2b828432b4732204e4e0dd3e5aec4bb0f92aa95f63df44012bea6b7851c29abe94b7f5c40b06436a61e33904fe
+  checksum: c9c8d82063ec5156d56b056c9124fed95714f05d7c1a64043174b0559aa099989f17a826579f22045384defe152e32d6355b7a9660cfed96819f43fccf277941
   languageName: node
   linkType: hard
 
@@ -3462,7 +3462,7 @@ __metadata:
     eslint-plugin-prettier: ^5.2.1
     nuxt: ^3.13.0
     pinia: ^2.1.7
-    postcss-custom-properties: ^13.3.12
+    postcss-custom-properties: ^14.0.1
     vue-eslint-parser: ^9.4.3
   languageName: unknown
   linkType: soft
@@ -11852,18 +11852,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^13.3.12":
-  version: 13.3.12
-  resolution: "postcss-custom-properties@npm:13.3.12"
+"postcss-custom-properties@npm:^14.0.1":
+  version: 14.0.1
+  resolution: "postcss-custom-properties@npm:14.0.1"
   dependencies:
-    "@csstools/cascade-layer-name-parser": ^1.0.13
-    "@csstools/css-parser-algorithms": ^2.7.1
-    "@csstools/css-tokenizer": ^2.4.1
-    "@csstools/utilities": ^1.0.0
+    "@csstools/cascade-layer-name-parser": ^2.0.1
+    "@csstools/css-parser-algorithms": ^3.0.1
+    "@csstools/css-tokenizer": ^3.0.1
+    "@csstools/utilities": ^2.0.0
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.4
-  checksum: 1e29d1caa1929443afdc4555ae440dd681766fb964294d1f450d37f4f334c94676bd638670752bb1392add4c1156a7a26106bd9a12649656f45f69c9eb4cea96
+  checksum: d86ed76ac62fa6a9583dc2ed923af6c091433541b2900e583ce24a5bd9afc9a2c549e30e6944fda4bd2ab4af5680bcf22c1478063401c65b9bd500f022515cb6
   languageName: node
   linkType: hard
 
