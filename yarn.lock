@@ -3461,7 +3461,7 @@ __metadata:
     "@playwright/test": ^1.45.2
     "@tss-calculator/formulas": "workspace:^"
     "@types/node": ^22.7.4
-    "@typescript-eslint/eslint-plugin": ^8.3.0
+    "@typescript-eslint/eslint-plugin": ^8.8.0
     "@typescript-eslint/parser": ^8.3.0
     "@vueuse/core": ^11.0.3
     "@vueuse/nuxt": ^11.0.3
@@ -3676,7 +3676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:8.3.0, @typescript-eslint/eslint-plugin@npm:^8.3.0":
+"@typescript-eslint/eslint-plugin@npm:8.3.0":
   version: 8.3.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.3.0"
   dependencies:
@@ -3724,7 +3724,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.5.0":
+"@typescript-eslint/eslint-plugin@npm:^8.5.0, @typescript-eslint/eslint-plugin@npm:^8.8.0":
   version: 8.8.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.8.0"
   dependencies:
