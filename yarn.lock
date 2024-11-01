@@ -3463,7 +3463,7 @@ __metadata:
     "@types/node": ^22.7.4
     "@typescript-eslint/eslint-plugin": ^8.8.0
     "@typescript-eslint/parser": ^8.3.0
-    "@vueuse/core": ^11.0.3
+    "@vueuse/core": ^11.2.0
     "@vueuse/nuxt": ^11.0.3
     eslint: ^9.11.1
     eslint-config-prettier: ^9.1.0
@@ -4538,7 +4538,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:11.0.3, @vueuse/core@npm:^11.0.3":
+"@vueuse/core@npm:11.0.3":
   version: 11.0.3
   resolution: "@vueuse/core@npm:11.0.3"
   dependencies:
@@ -4550,10 +4550,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:^11.2.0":
+  version: 11.2.0
+  resolution: "@vueuse/core@npm:11.2.0"
+  dependencies:
+    "@types/web-bluetooth": ^0.0.20
+    "@vueuse/metadata": 11.2.0
+    "@vueuse/shared": 11.2.0
+    vue-demi: ">=0.14.10"
+  checksum: d3ad695d7376505fa38afb6c82e7f36fb7261f8216bd2c6f321d352d818fd97f903c5662e4136dac1e980faccfda6ecd5240599b4db23aad718a752ba9a9643f
+  languageName: node
+  linkType: hard
+
 "@vueuse/metadata@npm:11.0.3":
   version: 11.0.3
   resolution: "@vueuse/metadata@npm:11.0.3"
   checksum: 5a08633fd3d8f5e3a81a8daab63060f9c7c30171263d90b78682c26398f79b84f39d27baad7ee8a66bf8efa241c0fafcaacb54d79088816ad423bb6709049d34
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:11.2.0":
+  version: 11.2.0
+  resolution: "@vueuse/metadata@npm:11.2.0"
+  checksum: 8475081d29ed204133f9ed3e5ff684aa2d5ef7e65355f4fb538786a97f9811f1a7904b668883f5f976dd1e953ba0bdb220e08a892d09972394e30d454cab2d15
   languageName: node
   linkType: hard
 
@@ -4578,6 +4597,15 @@ __metadata:
   dependencies:
     vue-demi: ">=0.14.10"
   checksum: cc6e0a585277f5ab04d8abe54121d80086b7666ecfa03ef00cf0c3a11c6944c13a1b282bc55b775b04edde2e433cdda491eabb1eccd04c9fe186c39ce1382bb0
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:11.2.0":
+  version: 11.2.0
+  resolution: "@vueuse/shared@npm:11.2.0"
+  dependencies:
+    vue-demi: ">=0.14.10"
+  checksum: 20b8120d4bce923bb5a6a0a9d3779883c051351555f1864c2cf05531317268a33c5ab91f7df97582e075fba2b243b3d11f3623357d166a790fbd49d7a1ec7803
   languageName: node
   linkType: hard
 
